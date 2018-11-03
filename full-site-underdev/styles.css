@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("font/caviar-dreams/caviar-dreams.ttf");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+	font-family:"Geo Sans Light";
+	src: url("font/geo-sans-light/geo-sans-light.ttf");
+}
+
+@font-face{
+	font-family:"Geo Sans Light";
+	src: url("font/geo-sans-light/geo-sans-light-oblique.ttf");
+	font-style: oblique;
+}
+
+:root {
+    --main-black: #323232;
+    --main-white: #ffffff;
+    --main-light-pink: #FBD9E8; 
+    --main-dark-pink: #F16985; 
+}
+
+
+/*******Global********/
+h1{
+	font-family: 'Caviar Dreams';
+	font-size: 50px;
+	font-weight: 600;
+}
+
+h2{
+	font-family: 'Caviar Dreams';
+	font-weight: 600;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+h3{
+	font-family: 'Geo Sans Light';
+	font-size: 30px;
+	color: var(--main-black);
+	line-height: 1;
+}
+
+h4{
+	font-family: 'Caviar Dreams';
+	font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h5{
+	font-family: 'Geo Sans Light';
+	font-size: 25px;
+	line-height: 1.4;
+	margin: auto;
+}
+
+h6{
+	font-family: 'Geo Sans Light';
+	font-size: 20px;
+}
+
+a{
+	font-family: 'Caviar Dreams';
+}
+
+.float{
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+	margin: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	top: -50px;
+}
+
+.subtitle{
+	color: var(--main-white);
+}
+
+.subtitle h2{
+	padding-top: 80px;
+	padding-bottom: 130px;
+}
+
+footer{
+	background-color: var(--main-black);
+	/*height: 70px;*/
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer i{
+	color: white;
+	margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer i:hover{
+	color: var(--main-dark-pink);
+	cursor: pointer;
+}
+
+/******Navbar********/
+.navbar-expand-lg .navbar-nav{
+	margin: auto;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: var(--main-black);
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-light .navbar-nav .nav-logo .nav-link{
+	text-transform: initial;
+}
+
+.navbar-expand-lg{
+	height: 80px;
+}
+
+.dropdown-menu{
+	text-transform: uppercase;
+	color: var(--main-black);
+	border-radius: 0;
+	padding: 0 0; 
+}
+
+.dropdown-item{
+	color: var(--main-black);
+	padding-top: 8px;
+    padding-bottom: 8px;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: var(--main-dark-pink);
+	color: var(--white);
+}
+
+.dropdown-item.active, .dropdown-item:active{
+	background-color: var(--main-dark-pink);
+	color: var(--white);
+}
+
+.navbar-brand{
+	margin-right: 0px;
+	padding-top: 0px;
+}
+
+.nav-item{
+	margin: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+	color: var(--main-dark-pink);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	color: var(--main-dark-pink);
+}
+
+.navbar-expand-lg {
+    height: auto;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover{
+	outline: none;
+}
+
+
+/*****Home Page******/
+.home-bg{
+	background-color: var(--main-light-pink);
+	color: var(--white);
+	/*align-items: center;*/
+}
+
+.home-bg .row{
+	margin: auto;
+	align-items: center;
+	height: 500px;
+}
+
+.home-bg img{
+	width: 120%;
+}
+
+.intro{
+	background-color: var(--main-black);
+	color: var(--white);
+	top: -57px;
+}
+
+.intro h2{
+	margin-bottom: 50px;
+}
+
+.intro h5{
+	margin: auto;
+}
+
+.sponsors .subtitle{
+	background-color: var(--main-dark-pink);
+	position: relative;
+	height: 300px;
+    padding-top: 175px;
+    top: -150px;
+    z-index: -1;
+}
+
+.sponsors .subtitle h2{
+	padding-top:0px;
+}
+
+
+/*****Travel Page******/
+.travel{
+	background-color: var(--main-black);
+}
+
+.bus{
+	background-color: var(--main-dark-pink);
+	color: var(--main-white);
+}
+
+.bus .bus_table{
+	background-color: rgba(50,50,50,0.7);
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    border: 1.5px solid var(--main-dark-pink);
+}
+
+.bus .bus_route{
+	padding: 0px;
+	display: flex;
+    margin: auto;
+}
+
+.route_item h6{
+	text-indent: 30px
+}
+
+.route_item{
+	background-color: rgba(50,50,50,0.7);
+	padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1.5px solid var(--main-dark-pink);
+}
+
+.car{
+	background-color: var(--main-black);
+	color: white;
+}
+
+.car .text{
+	margin: auto;
+}
+.car .text h5.col-lg-8{
+	margin-bottom: 50px;
+}
+.car.float{
+	margin-top: -50px;
+}
+
+.car_reimb{
+	margin: auto;
+}
+
+.car_item{
+	background-color: rgba(255,255,255,0.7);
+	border: 1.5px solid var(--main-black);
+	padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+.car_item h6{
+	margin-bottom: 0;
+}
+
+.car_item h5{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.plane{
+	background-color: var(--main-dark-pink);
+	color: white;
+	z-index: -1;
+}
+
+.plane h4{
+	margin-top: 50px;
+}
+
+/*****Schedule Page******/
+.schedule{
+	background-color: var(--main-light-pink);
+}
+
+.calendar{
+	background-color: var(--main-black);
+	color: white;
+	text-align: center;
+}
+
+/*****FAQ Page******/
+.faq{
+	background-color: var(--main-dark-pink)
+}
+
+.wrapper{
+	margin: auto;
+	overflow: hidden;
+	top: -50px;
+}
+
+.card{
+	background-color: var(--main-white);
+	border: 0px;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.wrapper2{
+	width: 49%;
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.card-header{
+	padding-top: 0px;
+	background-color: var(--main-black);
+	border-bottom: 1px solid #707070;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-header:first-child{
+	border-radius: 0px;
+}
+
+.card-header h5:focus{
+	outline: 0px;
+}
+
+.card-header:hover{
+	cursor: pointer;
+}
+
+.btn.btn-link{
+	width: 100%;
+	text-align: left;
+	padding: .75rem 1.25rem;
+}
+
+.btn-link,.btn-link:hover,.btn-link.focus, .btn-link:focus{
+	color: var(--main-white);
+	text-decoration: none;
+}
+
+.card-body{
+	color: white;
+	background-color: var(--main-dark-pink);
+	padding: 35px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.guideline{
+	margin-top: 100px;
+	background-color: var(--main-light-pink);
+	color: white;
+	padding-top: 100px;
+}
+
+.block{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+
+.box{
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	-webkit-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+	border-radius: 4px;
+	padding: 0;
+
+}
+
+.grid{
+/*	width: 100%;*/
+/*	background-color: var(--main-dark-pink);*/
+	color: var(--main-light-pink);
+	width: 100%;
+	/*padding-top: 100%; 
+	padding-bottom: : 10%; /* 1:1 Aspect Ratio */
+*/
+
+}
+
+.grid h4{
+/*	position:  absolute;
+   	top: 50%;
+   	left: 0;
+   	bottom: 0;
+   	right: 0;
+   	text-align: center;*/
+}
+
+.grid{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+/*  box-shadow: 0 6px 16px rgba(0,0,0,0.15);*/
+box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.grid div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: var(--main-black);
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-pack: center;
+  justify-content: center;
+  -o-box-align: center;
+  align-items: center;
+}
+
+.grid .back {
+  background: var(--main-dark-pink);
+  overflow: scroll;
+  padding: 20px;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.grid .back h6{
+	/*height: inherit;*/
+/*	margin-top: 30%;*/
+}
+
+.grid.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
