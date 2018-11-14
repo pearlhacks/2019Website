@@ -96,6 +96,13 @@ footer{
 	/*height: 70px;*/
 	text-align: center;
 	margin-top: 50px;
+	
+}
+
+footer.fixed{
+	bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 footer i{
@@ -274,6 +281,14 @@ footer i:hover{
     border: 1.5px solid var(--main-dark-pink);
 }
 
+.route_item.south{
+	text-align: center;
+}
+
+.route_item.south h6{
+	display: inline-block;
+}
+
 .car{
 	background-color: var(--main-black);
 	color: white;
@@ -310,14 +325,18 @@ footer i:hover{
 	padding-bottom: 20px;
 }
 
-.plane{
+.other{
 	background-color: var(--main-dark-pink);
 	color: white;
 	z-index: -1;
 }
 
-.plane h4{
+.other h4{
 	margin-top: 50px;
+}
+
+.other a{
+	text-decoration: underline;
 }
 
 /*****Schedule Page******/
@@ -552,34 +571,20 @@ box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 	.car.float{
 		margin-top: 0px;
 	}
+
+	/*****FAQ*****/
+	.wrapper2{
+		width: 100%;
+	}
+   
+	.box{
+		margin-left: auto;
+		margin-right: auto;
+	}
    
 }
 
 @media only screen and (max-width: 768px) {
-/*
-	.home-bg .row{
-		height: auto;
-	}
-
-	.home-bg img{
-		margin-top: 10%;
-		width: 100%;
-	}
-
-	.text{
-		margin-top: 10px;
-		margin-bottom: 50px;
-		text-align: center;
-	}
-
-	.float h2{
-		margin-top: 40px;
-	}
-
-	.float{
-		top: 0px;
-	}*/
-   
 }
 
 @media only screen and (max-width: 576px){
@@ -588,6 +593,7 @@ box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 	}
 
 	h2{
+
 		font-size: 30px;
 	}
 
