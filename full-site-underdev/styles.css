@@ -113,8 +113,13 @@ footer i:hover{
 }
 
 /******Navbar********/
+.navbar{
+	background-color: white;
+/*	padding: 0;*/
+}
+
 .navbar-expand-lg .navbar-nav{
-	margin: auto;
+	margin: auto
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -180,6 +185,10 @@ footer i:hover{
 
 .navbar-toggler:focus, .navbar-toggler:hover{
 	outline: none;
+}
+
+.logo{
+	display: none;
 }
 
 
@@ -270,10 +279,10 @@ footer i:hover{
 	color: white;
 }
 
-.car .text{
+.car .car_text{
 	margin: auto;
 }
-.car .text h5.col-lg-8{
+.car .car_text h5.col-lg-8{
 	margin-bottom: 50px;
 }
 .car.float{
@@ -324,7 +333,7 @@ footer i:hover{
 
 /*****FAQ Page******/
 .faq{
-	background-color: var(--main-dark-pink)
+	background-color: var(--main-dark-pink);
 }
 
 .wrapper{
@@ -338,6 +347,10 @@ footer i:hover{
 	border: 0px;
 	border-radius: 0px;
 	padding: 0px;
+}
+
+.card:hover{
+	cursor: pointer;
 }
 
 .wrapper2{
@@ -476,4 +489,116 @@ box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 .grid.flipped {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+
+/****Media Query*****/
+@media only screen and (max-width: 992px) {
+	.logo{
+		display: block;
+		text-align: center;
+	}
+
+	.navbar{
+		padding: 0px;
+	}
+
+	.navbar-toggler{
+		margin: auto;
+		margin-bottom: 20px;
+	/*	padding: 0px;*/
+	}
+
+	.navbar-light .navbar-toggler{
+		color: var(--main-black);
+	}
+
+	.navbar-brand{
+		display: none;
+	}
+
+	.dropdown-menu{
+		/*border: 0px;*/
+		text-align: center;
+		color: var(--main-dark-pink);
+	}
+
+	.nav-item{
+		text-align: center;
+	}
+
+	.home-bg .row{
+		height: auto;
+	}
+
+	.home-bg img{
+		margin-top: 10%;
+		width: 100%;
+	}
+
+	.text{
+		margin-top: 10px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.float h2{
+		margin-top: 40px;
+	}
+
+	.float{
+		top: 0px;
+	}
+
+	.car.float{
+		margin-top: 0px;
+	}
+   
+}
+
+@media only screen and (max-width: 768px) {
+/*
+	.home-bg .row{
+		height: auto;
+	}
+
+	.home-bg img{
+		margin-top: 10%;
+		width: 100%;
+	}
+
+	.text{
+		margin-top: 10px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.float h2{
+		margin-top: 40px;
+	}
+
+	.float{
+		top: 0px;
+	}*/
+   
+}
+
+@media only screen and (max-width: 576px){
+	h1{
+		font-size: 40px;
+	}
+
+	h2{
+		font-size: 30px;
+	}
+
+	h3{
+		font-size: 25px;
+	}
+
+	h5{
+		font-size: 20px;
+	}
+
+	/***Home Page****/
+	/**/
 }
