@@ -358,6 +358,8 @@ footer i:hover{
 	background-color: var(--main-dark-pink);
 	color: white;
 	z-index: -1;
+	margin: 0;
+	margin-bottom: auto;
 }
 
 .other h4{
@@ -479,23 +481,9 @@ footer i:hover{
 }
 
 .grid{
-/*	width: 100%;*/
-/*	background-color: var(--main-dark-pink);*/
 	color: var(--main-light-pink);
 	width: 100%;
-	/*padding-top: 100%; 
-	padding-bottom: : 10%; /* 1:1 Aspect Ratio */
-*/
 
-}
-
-.grid h4{
-/*	position:  absolute;
-   	top: 50%;
-   	left: 0;
-   	bottom: 0;
-   	right: 0;
-   	text-align: center;*/
 }
 
 .grid{
@@ -506,9 +494,9 @@ footer i:hover{
           transform-style: preserve-3d;
   transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-/*  box-shadow: 0 6px 16px rgba(0,0,0,0.15);*/
-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+  -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -545,7 +533,6 @@ box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
 /****Media Query*****/
 @media only screen and (max-width: 992px) {
 	.logo{
