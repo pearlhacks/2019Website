@@ -224,14 +224,13 @@ footer i:hover{
 
 button.register{
 	background-color: var(--main-dark-pink);
-	/*background-color: var(--main-black);*/
     text-transform: uppercase;
     border: none;
     padding: 3% 3% 3% 3%;
     font-size: 20px;
     border-radius: 200px;
     color: var(--main-white);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 button.register:hover{
@@ -269,6 +268,7 @@ button.register:hover{
 .sponsors_gallery{
 	margin: auto;
 	top: -80px;
+	text-align: center;
 }
 
 .sponsors_gallery a{
@@ -367,11 +367,13 @@ button.register:hover{
 
 .car_item h6{
 	margin-bottom: 0;
+	color: var(--main-black);
 }
 
 .car_item h5{
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: var(--main-black);
 }
 
 .other{
@@ -691,8 +693,13 @@ button.register:hover{
 	.sponsors .subtitle{
 		height: auto;
 	}
+
 	.sponsors .subtitle h2{
 		padding-top: 20px;
+	}
+
+	button.register{
+		padding: 4% 4% 4% 4%;
 	}
 
 
@@ -710,5 +717,10 @@ button.register:hover{
 	/****Wrapper Page****/
 	.wrapper{
 		top: -30px;
+	}
+
+	/*****FAQ******/
+	.block{
+		padding-top: 50px;
 	}
 }
