@@ -6,56 +6,46 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Cache-control" content="public">
-	<meta name=“google-site-verification” content=“ZchMMobOHNy-YGuU0QF3YSSbdGX2p3UvJXtwWhaOYto” />
+
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+	</script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<script>
+
+		$(document).ready(function() {
+			$(".countdown").load("./partials/countdown.html");
+			$("footer").load("./partials/footer.html");
+			$(".navbar").load("./partials/navbar.html");
+		});
+
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/countdown.js"></script>
+	<script type="text/javascript" src="./js/event.js"></script>
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="/img/fa-logo.png">
+	<link rel="icon" type="image/png" href="img/fa-logo.png" />
+	<link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
-	<div class="logo">
-		<a class="" href="index.html">
-			<img src="img/nav_logo.png" width="200"  alt="">
-		</a>
-    </div>
-
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
-        			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="https://pearlhacks1.typeform.com/to/H6yqGu">Participant</a>
-          				<a class="dropdown-item" href="https://pearlhacks1.typeform.com/to/WRg32d">Mentor</a>
-          				<a class="dropdown-item" href="https://pearlhacks1.typeform.com/to/yhzSLh">Volunteer</a>
-        			</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="travel.html">Travel</a>
-				</li>
-
-				<li class="nav-item">
-					 <a class="navbar-brand" href="index.html">
-    					<img src="img/nav_logo.png" width="200"  alt="">
- 					 </a>
-				</li>
-
-     			<li class="nav-item">
-       			 	<a class="nav-link" href="schedule.html">Schedule</a>
-      			</li>
-    		 	<li class="nav-item">
-    		 		<a class="nav-link" href="faq.html">FAQ</a>
-    		 	</li>
-    		</ul>
-  		</div>
-	</nav>
-
+	
+	<div class="countdown"></div>
+	<div class="logo">		
+ 		<a class="" href="index.html">		
+ 			<img src="img/nav_logo.png" width="200"  alt="">		
+ 		</a>		
+ 	</div>
+	<nav class="navbar navbar-expand-lg navbar-light"></nav>
 
 	<div class="travel subtitle">
 		<h2>Travel</h2>
@@ -67,7 +57,7 @@
 
 		<div class="bus float col-lg-8">
 			<h4>Bus</h4>
-			<h5 class="col-lg-10">Buses are the largest way we get hackers to Pearl Hacks. This year, we will be offering 3 interstate routes. Check the routes below to see if your school is a stop! If you plan on riding a bus to Pearl Hacks, then check back soon for the signup form.</h5>
+			<h5 class="col-lg-10">Buses are the largest way we get hackers to Pearl Hacks. This year, we are offering 2 interstate routes. Check the routes below to see if your school is a stop! If you plan on riding a bus to Pearl Hacks, please fill out our signup form.</h5>
 			<div class="bus_table col-lg-10">
 				<h5>Bus Routes</h5>
 			</div>
@@ -80,7 +70,6 @@
 					<h6>University of Virginia</h6>
 					<h6>Virginia Commonwealth University</h6>
 					<h6>George Washington University </h6>
-					<h6>William and Mary</h6>
 				</div>
 				<div class="route_item col-lg-6 second">
 					<h5>Western Route</h5>
@@ -91,13 +80,10 @@
 					<h6>Furman University</h6>
 
 				</div>
-				<div class="route_item south col-lg-12">
-					<h5>Southern Route</h5>
-					<h6>University of Florida</h6>
-					<h6>University of South Carolina</h6>
-					<h6>Benedict College</h6>
-				</div>
 			</div>
+			<h5 class="col-lg-10">Is your school on the bus route? <a href="
+				https://goo.gl/forms/VUbcNzlzRD6QRaQp2" target="_blank">Fill out this form</a></h5>
+			</br>
 		</div>
 		<div class="side-graphics col-lg-2">
 		</div>
@@ -174,7 +160,33 @@
 						<h6><span>&#36;</span>100</h6>
 					</div>
 				</div>
+
+				<h5 class="col-lg-10 car_form">Need a carpool group? <a href="https://goo.gl/forms/4scio3OlJU9ibec12" target="_blank">Fill out this form</a></h5>
+				</br>
+				<h5 class="col-lg-10">Already have a carpool group or looking for the gas reimbursement form? <a href="https://goo.gl/forms/XGJPambKkAWQrqrt2" target="_blank"></br>Fill out this form</a></h5>
+
+	
+				<div class=" car_parking">
+					<h5 class="col-lg-10">*Parking Information</h5>
+					<h5 class="col-lg-10"> The closest parking lots to our venue are Bell Tower Deck and FedEx Global Education Center.</h5>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Bell%20Tower%20Drive%20Chapel%20Hill%2C%20NC%2027514&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+							</iframe>
+							<a href="https://www.embedgooglemap.net"></a>
+						</div>
+					</div>
+					
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe id="gmap_canvas2" src="https://maps.google.com/maps?q=fedex%20global&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<a href="https://www.embedgooglemap.net"></a>
+						</div>
+					</div>
+				</div>
+
 			</div>
+
 			<div class="side-graphics col-lg-2">
 				<img src="img/travel_car.png">
 			</div>
@@ -188,50 +200,42 @@
 		<div class="other float col-lg-8">
 			<h4>Other</h4>
 			<h5 class="col-lg-10">If you decide to use any other means of transportation (e.g. train or a bus not on our route), please email
-			<a href="mailto: sponsor@pearlhacks.com">transportation@pearlhacks.com</a> about the possibility of reimbursement. Feel free to reach out to us regarding any other transportation related questions you may have too! We’re looking forward to having you at our hackathon! </h5>
+			<a href="mailto: transportation@pearlhacks.com">transportation@pearlhacks.com</a> about the possibility of reimbursement. Feel free to reach out to us regarding any other transportation related questions you may have too! We’re looking forward to having you at our hackathon! </h5>
 		</div>
 		<div class="side-graphics col-lg-2">
 		</div>
 	</div>
 
 
-	<footer class="footer">
-		<a href="https://www.facebook.com/pearlhackathon/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-		<a href="https://github.com/pearlhacks" target="_blank"><i class="fab fa-github"></i></a>
-		<a href="mailto: hello@pearlhacks.com"><i class="far fa-envelope"></i></a>
-		<a href="https://twitter.com/PearlHacks" target="_blank"><i class="fab fa-twitter"></i></a>
-		<a href="https://www.instagram.com/pearlhacks/" target="_blank"><i class="fab fa-instagram"></i></a>
-	</footer>
+	<footer class="footer"></footer>
 
+	<script>
 
+		$('.remove_later').addClass('row')
 
+		$(function(){
 
+			if ($(window).width()<992){
+				$('.remove_later').removeClass('row')
 
+			}else{
+				 $('.remove_later').addClass('row')
+			}
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			$(window).bind("resize",function(){
+			    if($(this).width() <992){
+			    	$('.remove_later').removeClass('row')
+			    }else{
+			    	$('.remove_later').addClass('row')
+			    }
+			})
 
-<script>
+			setTimeout(
+				function(){
+					$('.travel-link').addClass('active')
+				}, 100);
+			})
 
-	$('.remove_later').addClass('row')
-
-	$(function(){
-
-		if ($(window).width()<992){
-			$('.remove_later').removeClass('row')
-		}else{
-			 $('.remove_later').addClass('row')
-		}
-		$(window).bind("resize",function(){
-		    if($(this).width() <992){
-		    $('.remove_later').removeClass('row')
-		    }else{
-		    $('.remove_later').addClass('row')
-		    }
-		})
-	})
-
-</script>
+	</script>
 </body>
 </html>

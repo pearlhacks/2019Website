@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Caviar Dreams";
-    src: url("font/caviar-dreams/caviar-dreams.ttf");
+	font-family: "Caviar Dreams";
+	src: url("font/caviar-dreams/caviar-dreams.ttf");
 }
 
 @font-face {
-    font-family: "Caviar Dreams";
-    src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
-    font-weight: bold;
+	font-family: "Caviar Dreams";
+	src: url("font/caviar-dreams/caviar-dreams-bold.ttf");
+	font-weight: bold;
 }
 
 @font-face{
@@ -21,14 +21,16 @@
 }
 
 :root {
-    --main-black: #323232;
-    --main-white: #ffffff;
-    --main-light-pink: #FBD9E8; 
-    --main-dark-pink: #F16985; 
+	--main-black: #323232;
+	--main-white: #ffffff;
+	--main-light-pink: #FBD9E8; 
+	--main-dark-pink: #F16985; 
 }
 
 
-/*******Global********/
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
 h1{
 	font-family: 'Caviar Dreams';
 	font-size: 50px;
@@ -54,8 +56,8 @@ h3{
 h4{
 	font-family: 'Caviar Dreams';
 	font-size: 25px;
-    font-weight: 600;
-    text-align: center;
+	font-weight: 600;
+	text-align: center;
 }
 
 h5{
@@ -85,12 +87,12 @@ footer{
 }
 
 footer i{
-	color: white;
+	color: var(--main-white);
 	margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+	margin-bottom: 40px;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 footer i:hover{
@@ -99,7 +101,7 @@ footer i:hover{
 }
 
 .float{
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 	margin: auto;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -118,7 +120,6 @@ footer i:hover{
 /******Navbar********/
 .navbar{
 	background-color: white;
-/*	padding: 0;*/
 }
 
 .navbar-expand-lg .navbar-nav{
@@ -130,13 +131,9 @@ footer i:hover{
 	font-size: 20px;
 	text-transform: uppercase;
 	margin-left: 5px;
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
-/*.navbar-light .navbar-nav .nav-logo .nav-link{
-	text-transform: initial;
-}
-*/
 .nav-link:active, .nav-link.active{
 	color:var(--main-dark-pink) !important
 }
@@ -160,7 +157,7 @@ footer i:hover{
 .dropdown-item{
 	color: var(--main-black);
 	padding-top: 8px;
-    padding-bottom: 8px;
+	padding-bottom: 8px;
 }
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: var(--main-dark-pink);
@@ -187,12 +184,12 @@ footer i:hover{
 	color: var(--main-dark-pink);
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active{
 	color: var(--main-dark-pink);
 }
 
 .navbar-expand-lg {
-    height: auto;
+	height: auto;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover{
@@ -203,12 +200,40 @@ footer i:hover{
 	display: none;
 }
 
+/******Countdown********/
+.countdown { 
+	text-align: center;
+	background-color: var(--main-black);
+	color: var(--main-white);
+}
 
-/*****Home Page******/
+.countdown ul{
+	padding-left: 0px;
+}
+
+.countdown li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 1em;
+	padding-top: 0px;
+	text-transform: uppercase;
+}
+
+.countdown li span {
+	display: block;
+}
+
+.countdown h5{
+	padding-top: 1em;
+	padding-bottom: 20px;
+}
+
+/* ==========================================================================
+   Home page styles
+   ========================================================================== */
 .home-bg{
 	background-color: var(--main-light-pink);
 	color: var(--white);
-	/*align-items: center;*/
 }
 
 .home-bg .row{
@@ -224,13 +249,13 @@ footer i:hover{
 
 button.register{
 	background-color: var(--main-dark-pink);
-    text-transform: uppercase;
-    border: none;
-    padding: 3% 3% 3% 3%;
-    font-size: 20px;
-    border-radius: 200px;
-    color: var(--main-white);
-    margin-top: 10px;
+	text-transform: uppercase;
+	border: none;
+	padding: 3% 3% 3% 3%;
+	font-size: 20px;
+	border-radius: 200px;
+	color: var(--main-white);
+	margin-top: 10px;
 }
 
 button.register:hover{
@@ -256,9 +281,9 @@ button.register:hover{
 	background-color: var(--main-dark-pink);
 	position: relative;
 	height: 300px;
-    padding-top: 175px;
-    top: -150px;
-    z-index: -1;
+	padding-top: 175px;
+	top: -150px;
+	z-index: -1;
 }
 
 .sponsors .subtitle h2{
@@ -284,7 +309,9 @@ button.register:hover{
 	margin: auto;
 }
 
-/*****Travel Page******/
+/* ==========================================================================
+   Travel page styles
+   ========================================================================== */
 .travel{
 	background-color: var(--main-black);
 }
@@ -294,20 +321,39 @@ button.register:hover{
 	color: var(--main-white);
 }
 
+.bus h4{
+	margin-top: 50px;
+}
+
 .bus .bus_table{
 	background-color: rgba(50,50,50,0.7);
 	margin: auto;
 	text-align: center;
 	padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-    border: 1.5px solid var(--main-dark-pink);
+	padding-bottom: 20px;
+	margin-top: 50px;
+	border: 1.5px solid var(--main-dark-pink);
+}
+
+iframe#gmap_canvas{
+	width: 400px;
+	height: 500px;
+}
+
+iframe#gmap_canvas2{
+	width: 400px;
+	height: 500px;
 }
 
 .bus .bus_route{
 	padding: 0px;
 	display: flex;
-    margin: auto;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.bus h6, .car h6{
+	margin: auto;
 }
 
 .route_item h6{
@@ -317,8 +363,8 @@ button.register:hover{
 .route_item{
 	background-color: rgba(50,50,50,0.7);
 	padding-top: 20px;
-    padding-bottom: 20px;
-    border: 1.5px solid var(--main-dark-pink);
+	padding-bottom: 20px;
+	border: 1.5px solid var(--main-dark-pink);
 }
 
 .route_item.south{
@@ -336,6 +382,10 @@ button.register:hover{
 
 .car img{
 	margin-top: 150px;
+}
+
+.car h4{
+	margin-top: 50px;
 }
 
 .car .car_text{
@@ -361,8 +411,8 @@ button.register:hover{
 	background-color: rgba(255,255,255,0.7);
 	border: 1.5px solid var(--main-black);
 	padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
+	padding-bottom: 15px;
+	padding-left: 25px;
 }
 
 .car_item h6{
@@ -374,6 +424,29 @@ button.register:hover{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: var(--main-black);
+}
+
+.car_form{
+	padding-top: 50px;
+}
+
+.car_parking{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.mapouter{
+	text-align:right;
+	height:500px;
+	width:400px;
+	display: inline-block;
+	margin: 20px;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:500px;
+	width:400px;
 }
 
 .other{
@@ -388,12 +461,14 @@ button.register:hover{
 	margin-top: 50px;
 }
 
-.other a{
+.other a,.bus a, .car a{
 	text-decoration: underline;
 	color: white;
 }
 
-/*****Schedule Page******/
+/* ==========================================================================
+   Schedule page styles
+   ========================================================================== */
 .schedule{
 	background-color: var(--main-light-pink);
 }
@@ -411,7 +486,10 @@ button.register:hover{
 .side-graphics img{
 	width: 100%;
 }
-/*****FAQ Page******/
+
+/* ==========================================================================
+   FAQ page styles
+   ========================================================================== */
 .faq{
 	background-color: var(--main-dark-pink);
 }
@@ -435,9 +513,9 @@ button.register:hover{
 
 .wrapper2{
 	width: 49%;
-    float: left;
-    margin-left: 3px;
-    margin-right: 3px;
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 .card-header{
@@ -509,53 +587,57 @@ button.register:hover{
 }
 
 .grid{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-  -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+	-webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
 }
 
 .grid div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  background: var(--main-black);
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -o-box-pack: center;
-  justify-content: center;
-  -o-box-align: center;
-  align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: var(--main-black);
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	 -o-box-pack: center;
+	justify-content: center;
+	-o-box-align: center;
+	align-items: center;
 }
 
 .grid .back {
-  background: var(--main-dark-pink);
-  overflow: scroll;
-  padding: 20px;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.grid .back h6{
-	/*height: inherit;*/
-/*	margin-top: 30%;*/
+	background: var(--main-dark-pink);
+	overflow: scroll;
+	padding: 20px;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .grid.flipped {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
-/****Media Query*****/
+
+.grid .back a{
+	text-decoration: underline;
+	color: var(--main-light-pink);
+/*  font-weight: 500;*/
+}
+
+/* ==========================================================================
+   Media query
+   ========================================================================== */
 @media only screen and (max-width: 992px) {
 	.logo{
 		display: block;
@@ -569,7 +651,6 @@ button.register:hover{
 	.navbar-toggler{
 		margin: auto;
 		margin-bottom: 20px;
-	/*	padding: 0px;*/
 	}
 
 	.navbar-light .navbar-toggler{
@@ -618,7 +699,7 @@ button.register:hover{
 		display: none;
 	}
 
-    /****Travel****/
+	/****Travel****/
 	.car.float{
 		margin-top: 0px;
 	}
@@ -680,6 +761,22 @@ button.register:hover{
 		margin-right: 5px;
 	}
 
+	.countdown li{
+		padding: 0.5em;
+	}
+
+	.countdown ul{
+		padding: 0px;
+	}
+
+	.countdown h5{
+		padding-bottom: 10px;
+	}
+
+	#mlh-trust-badge img{
+		display: none;
+	}
+
 	.float{
 		padding-bottom: 20%;
 	}
@@ -688,6 +785,7 @@ button.register:hover{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+
 
 	/***Home Page****/
 	.sponsors .subtitle{
@@ -708,7 +806,29 @@ button.register:hover{
 		top: 0px;
 	}
 
-	.fixed{	/**Delete fixed class later*/
+	/***Travel Page****/
+	.mapouter{
+		width: auto;
+		height: 300px;
+
+	}
+
+	.gmap_canvas{
+		width: auto;
+		height: 300px;
+	}
+
+	iframe#gmap_canvas{
+		width: auto;
+		height: 300px;
+	}
+
+	iframe#gmap_canvas2{
+		width: auto;
+		height: 300px;
+	}
+
+	.fixed{ /**Delete fixed class later*/
 		bottom: 0;
 		position: fixed;
 		width: 100%;
@@ -723,4 +843,5 @@ button.register:hover{
 	.block{
 		padding-top: 50px;
 	}
+
 }
