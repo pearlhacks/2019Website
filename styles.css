@@ -281,12 +281,42 @@ button.register:hover{
     margin: auto;
 }
 
-.sponsors .subtitle{
+.logistics .subtitle{
     background-color: var(--main-dark-pink);
     position: relative;
     height: 300px;
     padding-top: 175px;
     top: -150px;
+    z-index: -1;
+    margin-bottom: -70px;
+}
+
+.logistics .subtitle h2{
+    padding-top:0px;
+}
+
+.logistics h3{
+    color: var(--main-dark-pink);
+    margin-top: 10px;
+}
+
+.more{
+    margin-top: 80px;
+}
+
+.more a{
+    color: var(--main-dark-pink);
+}
+
+.sponsors{
+    margin-top: 100px;
+}
+
+.sponsors .subtitle{
+    background-color: var(--main-dark-pink);
+    position: relative;
+    height: 300px;
+    padding-top: 120px;
     z-index: -1;
 }
 
@@ -294,10 +324,9 @@ button.register:hover{
     padding-top:0px;
 }
 
-.sponsors_gallery{
-    margin: auto;
-    top: -80px;
-    text-align: center;
+.sponsors_wrap{
+    top: 50px;
+    margin-bottom: 80px;
 }
 
 .sponsors_gallery a{
@@ -307,11 +336,6 @@ button.register:hover{
 
 .sponsors_gallery a:hover{
     color: var(--main-dark-pink);
-}
-
-.sponsors_wrap{
-    margin: auto;
-    top: -90px;
 }
 
 .sponsor_category{
@@ -509,6 +533,11 @@ iframe#gmap_canvas2{
     width: 100%;
 }
 
+.side-graphics.bot img{
+    position: absolute;
+    bottom: 0px;
+}
+
 .turnaround img{
     -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
     -moz-transform: rotate(180deg);        /* FF */
@@ -529,7 +558,6 @@ iframe#gmap_canvas2{
     text-align: left;
 }
 
-
 .calendar .event h5{
     font-size: 20px;
 }
@@ -537,6 +565,10 @@ iframe#gmap_canvas2{
 
 .calendar .location h5{
     font-style: italic;
+    font-size: 20px;
+}
+
+.calendar .host h5{
     font-size: 20px;
 }
 
@@ -575,6 +607,10 @@ iframe#gmap_canvas2{
     margin: 0px;
     height: 20%;
     top: -70px;
+}
+
+.workshop .time{
+    margin-top: 30px;
 }
 
 /* ==========================================================================
@@ -882,8 +918,17 @@ iframe#gmap_canvas2{
 
 
     /***Home Page****/
+    .logistics .subtitle{
+        padding-top: 200px;
+    }
+
+    .logistics h3{
+        margin-top: 20px;
+    }
+
     .sponsors .subtitle{
         height: auto;
+        padding-top:50px;
     }
 
     .sponsors .subtitle h2{
@@ -911,6 +956,10 @@ iframe#gmap_canvas2{
         text-align: center;
     }
 
+    .calendar .time h4{
+        text-align: center;
+    }
+
     .col-4.event{
         flex: 0 0 100%;
         max-width: 100%;
@@ -922,6 +971,23 @@ iframe#gmap_canvas2{
         margin-bottom: 40px;
     }
 
+    .col-3.host{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .col-3.location{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col-6.event{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .date{
         margin-top: 40px;
     }
@@ -930,6 +996,7 @@ iframe#gmap_canvas2{
     .mapouter{
         width: auto;
         height: 300px;
+        text-align: center;
 
     }
 
